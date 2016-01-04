@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './main.jsx'
+    './src/client.jsx'
   ],
 
   module: {
@@ -18,8 +18,10 @@ module.exports = {
   },
 
   output: {
-    path: __dirname + '/../dist',
+    path: __dirname + '/dist',
     publicPath: '/',
     filename: 'client.bundle.js'
   },
+
+  devtool: 'inline-source-map'
 };
